@@ -1,0 +1,66 @@
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <h2>
+        Welcome to ASP.NET!
+    </h2>
+    <p>
+        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
+    </p>
+    <p>
+        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
+            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
+    </p>
+    <asp:ListBox ID="ListBox1" runat="server" Rows="7" 
+        onselectedindexchanged="ListBox1_SelectedIndexChanged" 
+        SelectionMode="Multiple">
+     <asp:ListItem value="1">red</asp:ListItem>
+    <asp:ListItem value="2">green</asp:ListItem> 
+    <asp:ListItem value="3">yellow</asp:ListItem>
+    <asp:ListItem value="4">beige</asp:ListItem>
+    </asp:ListBox><br>
+
+    <asp:TextBox ID="TextBox1" runat="server" ontextchanged="TextBox1_TextChanged"></asp:TextBox></br>
+
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+    </br>
+         <asp:Button ID="Button1" runat="server" Text="remove" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button1_Click" 
+        style="margin-top: 10px" />
+    <asp:Button ID="Button2" runat="server" Text="display" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button2_Click" />
+         <asp:Button ID="Button3" runat="server" Text="count" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button3_Click" />
+         <asp:Button ID="Button4" runat="server" Text="add an item" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button4_Click" />
+         <asp:Button ID="Button5" runat="server" Text="clear" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button5_Click" />
+         <asp:Button ID="Button6" runat="server" Text="select" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button6_Click" />
+        <asp:Button ID="Button7" runat="server" Text="display multiple" BorderColor="Black" 
+        BorderStyle="Solid" Width="100px" onclick="Button6_Click" />
+
+        <asp:DropDownList ID="DropDownList1" runat="server" 
+        onselectedindexchanged="DropDownList1_SelectedIndexChanged" Width="288px" 
+        BackColor="#006600" ForeColor="White" Height="16px">
+            <asp:ListItem>open this bro for a good luck</asp:ListItem>
+            <asp:ListItem>sikeeee</asp:ListItem>
+            <asp:ListItem>you thought i was feeling you??</asp:ListItem>
+</asp:DropDownList>
+    <asp:BulletedList ID="BulletedList1" runat="server" 
+        onclick="BulletedList1_Click1" 
+        BulletImageUrl="https://us-tuna-sounds-images.voicemod.net/94541de3-8ac7-44ef-9f5f-e1d392da0c4f-1687110074234.png" 
+        BulletStyle="Numbered" DisplayMode="HyperLink" style="margin-left: 278px" 
+        Width="282px">
+        <asp:ListItem>basic.aspx</asp:ListItem>
+        <asp:ListItem>firstpracs.aspx</asp:ListItem>
+        <asp:ListItem>me </asp:ListItem>
+        <asp:ListItem>Default.aspx</asp:ListItem>
+        <asp:ListItem></asp:ListItem>
+    </asp:BulletedList>
+</asp:Content>
+
