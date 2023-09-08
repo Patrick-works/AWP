@@ -1,0 +1,4 @@
+c:\users\lenovo\documents\visual studio 2010\Projects\AWP3A\AWP3A\bin\AWP3A.dll
+c:\users\lenovo\documents\visual studio 2010\Projects\AWP3A\AWP3A\bin\AWP3A.pdb
+c:\users\lenovo\documents\visual studio 2010\Projects\AWP3A\AWP3A\obj\Debug\AWP3A.dll
+c:\users\lenovo\documents\visual studio 2010\Projects\AWP3A\AWP3A\obj\Debug\AWP3A.pdb
