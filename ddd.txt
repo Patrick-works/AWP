@@ -1,0 +1,22 @@
+<asp:CommandField HeaderText="Select info" ShowSelectButton="true" />
+    <asp:CommandField HeaderText="edit  info" ShowEditButton="true" />
+    <asp:CommandField HeaderText="Delete info" ShowDeleteButton="true" />
+    <asp:CommandField  ShowInsertButton="true" />
+
+
+
+ConnectionString="<%$ ConnectionStrings:masterConnectionString2 %>" 
+    SelectCommand="SELECT * FROM [Student_master]" 
+    UpdateCommand="UPDATE Student_master SET Control_ID = @Control_ID, name = @name, Email_id = @Email_id, Contactno = @Contactno, address = @address WHERE (Control_ID = @Control_ID)"
+    DeleteCommand ="delete from [Student_master] where [Control_ID]= @Control_ID"
+    ConflictDetection="CompareAllValues"
+        onselecting="SqlDataSource2_Selecting" EnableCaching="True"
+
+
+
+
+    SelectCommand="SELECT * FROM [Student_master]" 
+    UpdateCommand="UPDATE Student_master SET Control_ID = @Control_ID, name = @name, Email_id = @Email_id, Contactno = @Contactno, address = @address WHERE (Control_ID = @Control_ID)"
+    DeleteCommand ="delete from [Student_master] where [Control_ID]= @Control_ID"
+    ConflictDetection="CompareAllValues"
+        onselecting="SqlDataSource2_Selecting" EnableCaching="True"
