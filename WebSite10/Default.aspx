@@ -18,8 +18,21 @@
         <asp:TextBox ID="TextBox2" runat="server" ontextchanged="TextBox2_TextChanged"></asp:TextBox>
         <asp:TextBox ID="TextBox3" runat="server" ontextchanged="TextBox3_TextChanged"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </p>
 <p>
+        <asp:TextBox ID="TextBox4" runat="server" ontextchanged="TextBox4_TextChanged" 
+            style="margin-bottom: 4px"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Button" />
+    </p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
         &nbsp;</p>
 </asp:Content>
