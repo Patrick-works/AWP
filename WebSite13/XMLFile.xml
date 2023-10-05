@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SuperProProductList>
+  <Product ID="1" Name="Chair">
+    <Price>49.33</Price>
+    <Available>True</Available>
+    <Status>3</Status>
+  </Product>
+  <Product ID="2" Name="Car">
+    <Price>43399.55</Price>
+    <Available>True</Available>
+    <Status>3</Status>
+  </Product>
+  <Product ID="3" Name="Fresh Fruit Basket">
+    <Price>49.99</Price>
+    <Available>False</Available>
+    <Status>4</Status>
+  </Product>
+</SuperProProductList>
