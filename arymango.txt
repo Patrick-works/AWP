@@ -1,0 +1,186 @@
+> db.Employee.insert({"emp_fname":"Shemus","emp_mname":"raju","emp_lname":"gaitonde","emp_city":"thane","emp_state":"maha","emp_country":"india","emp_pincode":400071,"emp_eid":"shemdya@gmail.com","emp_pass":12346@12,"emp_salary":50000,"emp_phone":8359668920,"emp_role":"P._emp"})
+2023-09-08T09:01:13.443+0530 E QUERY    [js] SyntaxError: illegal character @(shell):1:210
+> db.Employee.insert({"emp_fname":"Shemus","emp_mname":"raju","emp_lname":"gaitonde","emp_city":"thane","emp_state":"maha","emp_country":"india","emp_pincode":400071,"emp_eid":"shemdya@gmail.com","emp_pass":12346@12,"emp_salary":50000,"emp_phone":8359668920,"emp_role":"P.j_emp"})
+2023-09-08T09:01:30.200+0530 E QUERY    [js] SyntaxError: illegal character @(shell):1:210
+> db.Employee.insert({"emp_fname":"Shemus","emp_mname":"raju","emp_lname":"gaitonde","emp_city":"thane","emp_state":"maha","emp_country":"india","emp_pincode":400071,"emp_eid":"shemdya@gmail.com","emp_pass":"12346@12","emp_salary":50000,"emp_phone":8359668920,"emp_role":"P.S_emp"})
+WriteResult({ "nInserted" : 1 })
+> db.Employee.find().pretty()
+{
+        "_id" : ObjectId("64fa94c18828564e6a038b8f"),
+        "emp_fname" : "john",
+        "emp_mname" : "pascal",
+        "emp_lname" : "dsouza",
+        "emp_city" : "mumbai",
+        "emp_state" : "maha",
+        "emp_country" : "india",
+        "emp_pincode" : 400070,
+        "emp_eid" : "johnwork06@gmail.com",
+        "emp_pass" : "12345@12",
+        "emp_salary" : 40000,
+        "emp_phone" : 8359688920,
+        "emp_role" : "P.S_emp"
+}
+{
+        "_id" : ObjectId("64fa95ae8828564e6a038b90"),
+        "emp_fname" : "Shemus",
+        "emp_mname" : "raju",
+        "emp_lname" : "gaitonde",
+        "emp_city" : "thane",
+        "emp_state" : "maha",
+        "emp_country" : "india",
+        "emp_pincode" : 400071,
+        "emp_eid" : "shemdya@gmail.com",
+        "emp_pass" : "12346@12",
+        "emp_salary" : 50000,
+        "emp_phone" : 8359668920,
+        "emp_role" : "P.S_emp"
+}
+> use aryan
+switched to db aryan
+> db.customer.insert({"cust_id":"A001","cname":"Aryan Bagwe","C_email":"aryanjbagwe@gmailcom","password":"Delux_excavator#24"})
+WriteResult({ "nInserted" : 1 })
+> db.customer.insert({"cust_id":"A002","cname":"Pratik Kumbhar","C_email":"pratyaKum@gmailcom","password":"PratyaITOH##41"})
+WriteResult({ "nInserted" : 1 })
+> db.customer.insert({"cust_id":"A003","cname":"Rushya Shinde","C_email":"Lucchi@gmailcom","password":"Luchinkesh@1234"})
+WriteResult({ "nInserted" : 1 })
+> db.customer.insert({"cust_id":"A004","cname":"Shuboo Gawade","C_email":"Shubhamboss@gmailcom","password":"ellow@1267"})
+WriteResult({ "nInserted" : 1 })
+> db.employee.insert({"cust_id":"E001","cname":"Gaurav Jadhav","C_email":"gauruu@gmailcom","password":"excavator#24"})
+WriteResult({ "nInserted" : 1 })
+> db.employee.insert({"cust_id":"E002","cname":"Sami Kadam","C_email":"samikad@gmailcom","password":"lola@6578"})
+WriteResult({ "nInserted" : 1 })
+> db.employee.insert({"cust_id":"E003","cname":"adi","C_email":"saditya@gmailcom","password":"aditya@6578"})
+WriteResult({ "nInserted" : 1 })
+> db.employee.insert({"cust_id":"E004","cname":"Lolani Qureshi","C_email":"Lolu@gmailcom","password":"lamesh@6578"})
+WriteResult({ "nInserted" : 1 })
+> show collections
+cars
+customer
+employee
+service
+> db.customer.find().pretty()
+{
+        "_id" : ObjectId("64fa96b78828564e6a038b91"),
+        "cust_id" : "A001",
+        "cname" : "Aryan Bagwe",
+        "C_email" : "aryanjbagwe@gmailcom",
+        "password" : "Delux_excavator#24"
+}
+{
+        "_id" : ObjectId("64fa96ea8828564e6a038b92"),
+        "cust_id" : "A002",
+        "cname" : "Pratik Kumbhar",
+        "C_email" : "pratyaKum@gmailcom",
+        "password" : "PratyaITOH##41"
+}
+{
+        "_id" : ObjectId("64fa971f8828564e6a038b93"),
+        "cust_id" : "A003",
+        "cname" : "Rushya Shinde",
+        "C_email" : "Lucchi@gmailcom",
+        "password" : "Luchinkesh@1234"
+}
+{
+        "_id" : ObjectId("64fa975f8828564e6a038b94"),
+        "cust_id" : "A004",
+        "cname" : "Shuboo Gawade",
+        "C_email" : "Shubhamboss@gmailcom",
+        "password" : "ellow@1267"
+}
+> db.employee.find().pretty()
+{
+        "_id" : ObjectId("64fa97b08828564e6a038b95"),
+        "cust_id" : "E001",
+        "cname" : "Gaurav Jadhav",
+        "C_email" : "gauruu@gmailcom",
+        "password" : "excavator#24"
+}
+{
+        "_id" : ObjectId("64fa97e68828564e6a038b96"),
+        "cust_id" : "E002",
+        "cname" : "Sami Kadam",
+        "C_email" : "samikad@gmailcom",
+        "password" : "lola@6578"
+}
+{
+        "_id" : ObjectId("64fa98258828564e6a038b97"),
+        "cust_id" : "E003",
+        "cname" : "adi",
+        "C_email" : "saditya@gmailcom",
+        "password" : "aditya@6578"
+}
+{
+        "_id" : ObjectId("64fa98698828564e6a038b98"),
+        "cust_id" : "E004",
+        "cname" : "Lolani Qureshi",
+        "C_email" : "Lolu@gmailcom",
+        "password" : "lamesh@6578"
+}
+
+
+
+C:\Windows\system32>cd C:\Program Files\MongoDB\Server\3.6\bin
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongod
+
+
+
+cmd2 run as admin
+
+C:\Windows\system32>cd C:\Program Files\MongoDB\Server\3.6\bin
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongo
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.6.3
+
+
+cmd 3 
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongo
+MongoDB shell version v3.6.3
+
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoimport --host localhost --db aryan --collection restraunts --file C:\Users\NGT\Documents\neww.json
+2023-09-15T08:45:17.859+0530    connected to: localhost
+2023-09-15T08:45:17.860+0530    imported 24 documents
+
+
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoexport --db aryanrest --collection restraunts  --type JSON  --out Documents\hello.txt
+2023-09-15T09:41:16.632+0530    connected to: localhost
+2023-09-15T09:41:16.636+0530    exported 24 records
+
+
+ --host localhost --db aryan --collection restraunts --file C:\Users\NGT\Documents\neww.json
+2023-09-15T08:45:17.859+0530    connected to: localhost
+2023-09-15T08:45:17.860+0530    imported 24 documents
+
+
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoexport --db aryanrest --collection restraunts  --type JSON  --out Documents\hello.JSON
+2023-09-15T09:17:49.245+0530    connected to: localhost
+2023-09-15T09:17:49.247+0530    exported 24 records
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoexport --db aryanrest --collection restraunts  --type txt  --out Documents\hello.txt
+2023-09-15T09:40:30.984+0530    error validating settings: invalid output type 'txt', choose 'json' or 'csv'
+2023-09-15T09:40:30.984+0530    try 'mongoexport --help' for more information
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoexport --db aryanrest --collection restraunts  --type csv  --out Documents\hello.csv
+2023-09-15T09:40:59.087+0530    Failed: CSV mode requires a field list
+
+C:\Program Files\MongoDB\Server\3.6\bin>mongoexport --db aryanrest --collection restraunts  --type JSON  --out Documents\hello.txt
+2023-09-15T09:41:16.632+0530    connected to: localhost
+2023-09-15T09:41:16.636+0530    exported 24 records
+
+C:\Program Files\MongoDB\Server\3.6\bin>
+
+
+
+
+
+backup-
+C:\Program Files\MongoDB\Server\3.6\bin>mongodump --out C:\apprac --db aryan
+restore
+C:\Program Files\MongoDB\Server\3.6\bin>mongorestore --dir c:\apprac --db aryan_new
+
