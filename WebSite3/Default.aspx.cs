@@ -11,50 +11,40 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
-    protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+    protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
     {
-        Label1.Text = ListBox1.SelectedItem.ToString();
+
+        if (e.Day.Date.Day == 5 && e.Day.Date.Month == 9)
+        {
+            Label lbl = new Label();
+            lbl.Text = "Teacher day";
+            e.Cell.Controls.Add(lbl);
+            e.Cell.BackColor = System.Drawing.Color.Azure;
+        }
+        if (e.Day.Date.Day == 25 && e.Day.Date.Month == 12)
+        {
+            Calendar1.SelectedDate = new DateTime(2023, 12, 25);
+
+            Calendar1.SelectedDates.SelectRange(Calendar1.SelectedDate,
+                Calendar1.SelectedDate.AddDays(10));
+            Label lb1 = new Label();
+            lb1.Text = "Chrismax";
+            e.Cell.Controls.Add(lb1);
+
+
+        }
+
     }
-    protected void TextBox1_TextChanged(object sender, EventArgs e)
+
+    protected void Calendar1_SelectionChanged(object sender, EventArgs e)
     {
-         
-    }
-    protected void Button2_Click(object sender, EventArgs e)
-    {
-        Label1.Text = ListBox1.SelectedItem.Text;
+        Label1.Text = "selected date is" + Calendar1.SelectedDate.Date;
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        ListBox1.Items.Remove(ListBox1.SelectedItem);
-    }
-    protected void Button3_Click(object sender, EventArgs e)
-    {
-        Label1.Text = ListBox1.Items.Count.ToString();
-    }
-    protected void Button4_Click(object sender, EventArgs e)
-    {
-        ListBox1.Items.Add(TextBox1.Text);
-    }
-    protected void Button5_Click(object sender, EventArgs e)
-    {
-        Label1.Text = "";
-    }
-    protected void Button6_Click(object sender, EventArgs e)
-    {
-        foreach (ListItem l in ListBox1.Items)
-            if (l.Selected)
-                    Label1.Text += l.Text.ToString();
-    }
-    protected void BulletedList1_Click(object sender, BulletedListEventArgs e)
-    {
 
+       TimeSpan cd = new DateTime(2023, 12, 31) - DateTime.Now;
+        Label2.Text = cd.Days.ToString();
     }
-    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-    {
 
-    }
-    protected void BulletedList1_Click1(object sender, BulletedListEventArgs e)
-    {
-
-    }
 }

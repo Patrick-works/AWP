@@ -5,44 +5,23 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-      YA SAHEB YA
+        Welcome to ASP.NET!
     </h2>
     <p>
         To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
     </p>
+    <asp:Label ID="Label1" runat="server" Text="See changes here"></asp:Label>
+    <br />
+    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+        onselectedindexchanged="DropDownList1_SelectedIndexChanged">
+        <asp:ListItem>Arial</asp:ListItem>
+        <asp:ListItem>Verdana</asp:ListItem>
+        <asp:ListItem>copper</asp:ListItem>
+    </asp:DropDownList>
+    <asp:CheckBox ID="CheckBox1" runat="server" AutoPostBack="True" 
+        oncheckedchanged="CheckBox1_CheckedChanged" />
     <p>
         You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
-    <p> <br /><asp:Label ID="Label1" 
-                         Text="Enter your for college email only!" 
-                         runat="server"> </asp:label>
-
-    <asp:TextBox ID="TextBox1" 
-                    TabIndex= "2" 
-                    BorderColor="Pink" BackColor= "Beige" 
-                    ToolTip="kuch toh dal" runat="server" EnableTheming="True" 
-            ontextchanged="TextBox1_TextChanged" ></asp:TextBox> 
-                    <br />
-                    <br />
-
-            <asp:Label ID="Label2" 
-            Text="Please enter a valid password!" 
-            runat="server" > </asp:label>
-
-       <asp:TextBox ID="TextBox2" 
-            TabIndex= "1" 
-            BorderColor="Black" Text="Password" BackColor= "olive" 
-            ToolTip="put something init fam" runat="server"  Rows="4" 
-            Maxlength= "5" ></asp:TextBox>   
-              
-    </p>
-
-
-
-    <p> <asp:Button ID="Button1" runat="server" Text="Submit" BorderStyle="Inset" 
-            ToolTip="Submit" BorderWidth="4px" AccessKey="1" onclick="Button1_Click1"/>
+            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN
     </p>
 </asp:Content>
-
-
